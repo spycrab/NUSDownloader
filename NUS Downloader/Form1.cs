@@ -2805,7 +2805,7 @@ namespace NUS_Downloader
                 else
                     wadName = title_info[0] + "-NUS-v" + title_version + ".wad";
 
-                nusClient.DownloadTitle(title_info[0], title_version.ToString(), scriptdir, wadName, storeTypes);
+                nusClient.DownloadTitle(title_info[0], title_version == 0xffff ? "" : title_version.ToString(), scriptdir, wadName, storeTypes);
 
             }
             WriteStatus("Script completed!");
