@@ -1,4 +1,6 @@
 .svn
+.vs
 bin
+obj
 *.user
 
